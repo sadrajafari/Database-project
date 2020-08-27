@@ -3,7 +3,7 @@ const Router   = require('./Routes/Router');
 const express  = require('express');
 const app      = express();
 
-mongoose.connect('mongodb://localhost/playground')
+mongoose.connect('mongodb://localhost/yourDatabaseName')
     .then(() => console.log("Connected to Database..."))
     .catch(err => console.log(err.message))
 
